@@ -1,0 +1,60 @@
+[2026-07-06 16:31:22] local.ERROR: The command "npm install" failed.
+
+Exit Code: 1
+
+Error Output:
+================
+"npm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+ {"exception":"[object] (Illuminate\\Process\\Exceptions\\ProcessFailedException(code: 1): The command \"npm install\" failed.
+
+Exit Code: 1
+
+Error Output:
+================
+\"npm\" no se reconoce como un comando interno o externo,
+
+programa o archivo por lotes ejecutable.
+
+ at C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Process/ProcessResult.php:124)
+[stacktrace]
+#0 C:/Users/DELL/Herd/app-pharma/vendor/laravel/chisel/src/Node/Npm.php(22): Illuminate/Process/ProcessResult->throw()
+#1 C:/Users/DELL/Herd/app-pharma/app/Console/Commands/InstallFeaturesCommand.php(88): Laravel/Chisel/Node/Npm->install()
+#2 C:/Users/DELL/Herd/app-pharma/vendor/laravel/prompts/src/Spinner.php(113): App/Console/Commands/InstallFeaturesCommand->{closure:App/Console/Commands/InstallFeaturesCommand::installNodeDependencies():88}()
+#3 C:/Users/DELL/Herd/app-pharma/vendor/laravel/prompts/src/Spinner.php(51): Laravel/Prompts/Spinner->renderStatically(Object(Closure))
+#4 C:/Users/DELL/Herd/app-pharma/vendor/laravel/prompts/src/helpers.php(250): Laravel/Prompts/Spinner->spin(Object(Closure))
+#5 C:/Users/DELL/Herd/app-pharma/app/Console/Commands/InstallFeaturesCommand.php(87): Laravel/Prompts/spin(Object(Closure), 'Installing depe...')
+#6 C:/Users/DELL/Herd/app-pharma/app/Console/Commands/InstallFeaturesCommand.php(59): App/Console/Commands/InstallFeaturesCommand->installNodeDependencies()
+#7 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Console/Commands/InstallFeaturesCommand->handle()
+#8 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#9 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#10 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#11 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#12 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Console/Command.php(280): Illuminate/Container/Container->call(Array)
+#13 C:/Users/DELL/Herd/app-pharma/vendor/symfony/console/Command/Command.php(284): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#14 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Console/Command.php(249): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#15 C:/Users/DELL/Herd/app-pharma/vendor/symfony/console/Application.php(1144): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#16 C:/Users/DELL/Herd/app-pharma/vendor/symfony/console/Application.php(379): Symfony/Component/Console/Application->doRunCommand(Object(App/Console/Commands/InstallFeaturesCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#17 C:/Users/DELL/Herd/app-pharma/vendor/symfony/console/Application.php(218): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#18 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#19 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/DELL/Herd/app-pharma/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#21 {main}
+"} 
+[2026-07-06 16:39:32] local.ERROR: Command "server" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server\" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve at C:/Users/DELL/Herd/app-pharma/vendor/symfony/console/Application.php:785)
+[stacktrace]
+#0 C:/Users/DELL/Herd/app-pharma/vendor/symfony/console/Application.php(321): Symfony/Component/Console/Application->find('server')
+#1 C:/Users/DELL/Herd/app-pharma/vendor/symfony/console/Application.php(218): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/DELL/Herd/app-pharma/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/DELL/Herd/app-pharma/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#5 {main}
+"} 
